@@ -1,8 +1,8 @@
-local keymap = vim.keymap.set
+local map = vim.keymap.set
 
 -- Leader key
 
-keymap("", "<Space>", "<Nop>")
+map("", "<Space>", "<Nop>")
 vim.g.mapleader = " "
 
 -- Modes
@@ -16,11 +16,11 @@ vim.g.mapleader = " "
 -- Insert mode
 
 
+
 -- Normal mode
 
-keymap("n", "<leader>t", ":print \"test\"<CR>")
-keymap("n", "n", "h")
-keymap("n", "e", "j")
-keymap("n", "o", "k")
-keymap("n", "i", "l")
+map("n", "n", "h")
+map("n", "e", "j")
+map("n", "o", "k")
+map("n", "i", "l")
 
