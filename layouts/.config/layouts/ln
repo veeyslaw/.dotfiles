@@ -27,13 +27,13 @@ xkb_symbols "latin" {
     key <AD02> { [ U0064, U0044, U005d, U221a ] }; // d, D, ], √
     key <AD03> { [ U0072, U0052, U002b, U00b1 ] }; // r, R, +, ±
     key <AD04> { [ U0077, U0057, U0040, U00bf ] }; // w, W, @, ¿
-    key <AD05> { [ U0062, U0042, U005c        ] }; // b, B, \, <none>
-    key <AD06> { [ U006a, U004a, U005e        ] }; // j, J, ^, <none>
+    key <AD05> { [ U0062, U0042, U005c, none  ] }; // b, B, \, <none>
+    key <AD06> { [ U006a, U004a, U005e, none  ] }; // j, J, ^, <none>
     key <AD07> { [ U0066, U0046, U0028, U00a3 ] }; // f, F, (, £
     key <AD08> { [ U0075, U0055, U0029, U00b0 ] }; // u, U, ), °
     key <AD09> { [ U0070, U0050, U0024, U20ac ] }; // p, P, $, €
 
-    key <AD10> { [ U0027, U0022, U0025        ] }; // ', ", %, <none>
+    key <AD10> { [ U0022, U0027, U0025, none  ] }; // ", ', %, <none>
     key <AD11> {
         repeat=no,
         type[group1]="ALPHABETIC",
@@ -50,20 +50,20 @@ xkb_symbols "latin" {
     key <AC04> { [ U0074, U0054, U021b, U021a ] }; // t, T, ț, Ț
     key <AC05> { [ U0067, U0047, U003d, U2260 ] }; // g, G, =, ≠
     key <AC06> { [ U0079, U0059, U00ee, U00ce ] }; // y, Y, î, Î
-    key <AC07> { [ U006e, U004e, U002d        ] }; // n, N, -, <none>
-    key <AC08> { [ U0065, U0045, U005f        ] }; // e, E, _, <none>
+    key <AC07> { [ U006e, U004e, U002d, none  ] }; // n, N, -, <none>
+    key <AC08> { [ U0065, U0045, U005f, none  ] }; // e, E, _, <none>
     key <AC09> { [ U006f, U004f, U00e2, U00c2 ] }; // o, O, â, Â
     key <AC10> { [ U0069, U0049, U007c, U00bd ] }; // i, I, |, ½
 
     key <AC11> { [ Delete ] };
 
 
-    key <AB01> { [ U007a, U005a, U007e        ] }; // z, Z, ~, <none>
-    key <AB02> { [ U0078, U0058               ] }; // x, X, <none>, <none>
+    key <AB01> { [ U007a, U005a, U007e, none  ] }; // z, Z, ~, <none>
+    key <AB02> { [ U0078, U0058, none , none  ] }; // x, X, <none>, <none>
     key <AB03> { [ U006d, U004d, U007b, U2714 ] }; // m, M, {, ✔
     key <AB04> { [ U0063, U0043, U007d, U2718 ] }; // c, C, }, ✘
-    key <AB05> { [ U0076, U0056, U0023        ] }; // v, V, #, <none>
-    key <AB06> { [ U006b, U004b, U0060        ] }; // k, K, `, <none>
+    key <AB05> { [ U0076, U0056, U0023, none  ] }; // v, V, #, <none>
+    key <AB06> { [ U006b, U004b, U0060, none  ] }; // k, K, `, <none>
     key <AB07> { [ U006c, U004c, U0026, U221e ] }; // l, L, &, ∞
     key <AB08> { [ U002c, U003b, U002a, U00d7 ] }; // ,, ;, *, ×
     key <AB09> { [ U002e, U003a, U003c, U2245 ] }; // ., :, <, ≅
