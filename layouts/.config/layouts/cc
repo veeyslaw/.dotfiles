@@ -1,0 +1,93 @@
+default partial alphanumeric_keys
+xkb_symbols "cyrillic" {
+
+    name[Group1]= "veeyslaw cyrillic";
+
+
+    key <ESC> { [ U1f9d0, U1f631, U1f92f, U1f92b ] }; // 🧐, 😱, 🤯, 🤫
+    key <TLDE> { [ Menu ] };
+    
+
+    key <AE01> { [ U0039, U0065, U03b8, U0398 ] }; // 9, e, Θ, Θ
+    key <AE02> { [ U0032, U0045, U03c3, U03a3 ] }; // 5, E, σ, Σ
+    key <AE03> { [ U0031, U0041, U03b2, U0392 ] }; // 1, A, β, Β
+    key <AE04> { [ U0033, U0043, U03b1, U0391 ] }; // 3, C, α, Α
+    key <AE05> { [ U0037, U003c, U03b4, U0394 ] }; // 7, <, δ, Δ
+    key <AE06> { [ U0036, U0046, U03b5, U0395 ] }; // 6, F, ε, Ε
+    key <AE07> { [ U0032, U0042, U03c0, U03a0 ] }; // 2, B, π, Π
+    key <AE08> { [ U0030, U0030, U03bb, U039b ] }; // 0, 0, λ, Λ
+    key <AE09> { [ U0034, U0044, U03bf, U039f ] }; // 4, D, ο, Ο
+    key <AE10> { [ U0038, U003e, U03c9, U03a9 ] }; // 8, >, ω, Ω
+
+    key <AE11> { [ U1f923, U1f926, U1f973, U1f44f ] }; // 🤣, 🤦, 🥳, 👏
+    key <AE12> { [ U1f44d, U1f604, U1f605, U1f61d ] }; // 👍, 😄, 😅, 😝
+
+
+    key <AD01> { [ U044e, U042e, U0026, U221e ] }; // ю, Ю, &, ∞
+    key <AD02> { [ U0434, U0414, U0040, U00bf ] }; // д, Д, @, ¿
+    key <AD03> { [ U0440, U0420, U005b, U00b2 ] }; // р, Р, [, ²
+    key <AD04> { [ U0448, U0428, U005d, U221a ] }; // ш, Ш, ], √
+    key <AD05> { [ U0431, U0411, U005f, U0060 ] }; // б, Б, _, `
+    key <AD06> { [ U0436, U0416, U0024, U20ac ] }; // ж, Ж, $, €
+    key <AD07> { [ U0444, U0424, U0028, U00a3 ] }; // ф, Ф, (, £
+    key <AD08> { [ U0443, U0423, U0029, U00b0 ] }; // у, У, ), °
+    key <AD09> { [ U043f, U041f, U007b, U2714 ] }; // п, П, {, ✔
+    
+    key <AD10> { [ U0027, U0022, U007d, U2718 ] }; // ', ", }, ✘
+    key <AD11> {
+        repeat=no,
+        type[group1]="ALPHABETIC",
+        symbols[group1]=[ Caps_Lock, Caps_Lock],
+        actions[group1]=[ LockMods(modifiers=Lock), Private(type=3,data[0]=1,data[1]=3,data[2]=3)]
+    };
+    key <AD12> { [ Alt_L ] };
+    key <BKSL> { [ U1f975, U26a7, U1f913, U2626 ] }; // 🥵, ⚧, 🤓, ☦️
+
+
+    key <AC01> { [ U0430, U0410, U044d, U042d ] }; // а, А, э, Э
+    key <AC02> { [ U0441, U0421, U0449, U0429 ] }; // с, С, щ, Щ
+    key <AC03> { [ U0445, U0425, U0445, U0425 ] }; // х, Х, х, Х
+    key <AC04> { [ U0442, U0422, U0446, U0426 ] }; // т, Т, ц, Ц
+    key <AC05> { [ U0433, U0413, U0433, U0413 ] }; // г, Г, г, Г
+    key <AC06> { [ U044c, U042c, U042c, U042a ] }; // ь, Ь, ъ, Ъ
+    key <AC07> { [ U043d, U041d, U044b, U044b ] }; // н, Н, ы, Ы
+    key <AC08> { [ U0435, U0415, U0451, U0401 ] }; // е, Е, ё, Ё
+    key <AC09> { [ U043e, U041e, U043e, U041e ] }; // о, О, о, О
+    key <AC10> { [ U0438, U0418, U0439, U0419 ] }; // и, И, й, Й
+
+    key <AC11> { [ Delete ] };
+
+
+    key <AB01> { [ U0437, U0417, U007c, U00bd ] }; // з, З, |, ½
+    key <AB02> { [ U044f, U042f, U005c, U007e ] }; // я, Я, \, ~
+    key <AB03> { [ U043c, U041c, U002a, U00d7 ] }; // м, М, *, ×
+    key <AB04> { [ U0447, U0427, U002f, U00f7 ] }; // ч, Ч, /, ÷
+    key <AB05> { [ U0432, U0412, U0023, U005e ] }; // в, В, #, ^
+    key <AB06> { [ U043a, U041a, U003d, U2260 ] }; // к, К, =, ≠
+    key <AB07> { [ U043b, U041b, U002d, U0025 ] }; // л, Л, -, %
+    key <AB08> { [ U002c, U003b, U002b, U00b1 ] }; // ,, ;, +, ±
+    key <AB09> { [ U002e, U003a, U003c, U2245 ] }; // ., :, <, ≅
+    key <AB10> { [ U003f, U0021, U003e, U226b ] }; // ?, !, >, ≫
+
+    key <KPDL> { [ KP_Delete, KP_Decimal ] }; // Dele .
+
+    key <LSGT> { [ U1f975, U26a7, U1f913, U2626 ] }; // 🥵, ⚧, 🤓, ☦️
+    key <BKSP> { [ U1f618, U1f619, U1f62d, U1f927 ] }; // 😘, 😙, 😭, 🤧
+
+    key <CAPS> { [ BackSpace ] };
+
+
+    key <LALT> {
+        type[Group1]="ONE_LEVEL",
+        symbols[Group1] = [ ISO_Level3_Shift ]
+    };
+    key <RWIN> { [ Alt_L ] };
+    modifier_map Mod1 { <RWIN> }; // Wierdly adds this only to the first modifier
+    key <COMP> { [ Escape ] };
+
+    key <SCLK> { [ U1f644, U231a, U1f612, U1f92c ] }; // 🙄, ⌚, 😒, 🤬
+    key <DELE> { [ U1f52b, U1f4a6, U1f30a, U1f346 ] }; // 🔫, 💦, 🌊, 🍆
+
+
+    include "level3(ralt_switch)"
+};

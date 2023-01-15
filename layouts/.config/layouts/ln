@@ -1,0 +1,94 @@
+default partial alphanumeric_keys modifier_keys
+xkb_symbols "latin" {
+
+    name[Group1]="veeyslaw latin";
+
+
+    key <ESC> { [ U1f9d0, U1f631, U1f92f, U1f92b ] }; // 🧐, 😱, 🤯, 🤫
+    key <TLDE> { [ Menu ] };
+
+
+    key <AE01> { [ U0039, U0065, U03b8, U0398 ] }; // 9, e, Θ, Θ
+    key <AE02> { [ U0035, U0045, U03c3, U03a3 ] }; // 5, E, σ, Σ
+    key <AE03> { [ U0031, U0041, U03b2, U0392 ] }; // 1, A, β, Β
+    key <AE04> { [ U0033, U0043, U03b1, U0391 ] }; // 3, C, α, Α
+    key <AE05> { [ U0037, U003c, U03b4, U0394 ] }; // 7, <, δ, Δ
+    key <AE06> { [ U0036, U0046, U03b5, U0395 ] }; // 6, F, ε, Ε
+    key <AE07> { [ U0032, U0042, U03c0, U03a0 ] }; // 2, B, π, Π
+    key <AE08> { [ U0030, U0030, U03bb, U039b ] }; // 0, 0, λ, Λ
+    key <AE09> { [ U0034, U0044, U03bf, U039f ] }; // 4, D, ο, Ο
+    key <AE10> { [ U0038, U003e, U03c9, U03a9 ] }; // 8, >, ω, Ω
+
+    key <AE11> { [ U1f923, U1f926, U1f973, U1f44f ] }; // 🤣, 🤦, 🥳, 👏
+    key <AE12> { [ U1f44d, U1f604, U1f605, U1f61d ] }; // 👍, 😄, 😅, 😝
+
+
+    key <AD01> { [ U0071, U0051, U005b, U00b2 ] }; // q, Q, [, ²
+    key <AD02> { [ U0064, U0044, U005d, U221a ] }; // d, D, ], √
+    key <AD03> { [ U0072, U0052, U002b, U00b1 ] }; // r, R, +, ±
+    key <AD04> { [ U0077, U0057, U0040, U00bf ] }; // w, W, @, ¿
+    key <AD05> { [ U0062, U0042, U005c        ] }; // b, B, \, <none>
+    key <AD06> { [ U006a, U004a, U005e        ] }; // j, J, ^, <none>
+    key <AD07> { [ U0066, U0046, U0028, U00a3 ] }; // f, F, (, £
+    key <AD08> { [ U0075, U0055, U0029, U00b0 ] }; // u, U, ), °
+    key <AD09> { [ U0070, U0050, U0024, U20ac ] }; // p, P, $, €
+
+    key <AD10> { [ U0027, U0022, U0025        ] }; // ', ", %, <none>
+    key <AD11> {
+        repeat=no,
+        type[group1]="ALPHABETIC",
+        symbols[group1]=[ Caps_Lock, Caps_Lock],
+        actions[group1]=[ LockMods(modifiers=Lock), Private(type=3,data[0]=1,data[1]=3,data[2]=3)]
+    };
+    key <AD12> { [ Alt_L ] };
+    key <BKSL> { [ U1f975, U26a7, U1f913, U2626 ] }; // 🥵, ⚧, 🤓, ☦️
+
+
+    key <AC01> { [ U0061, U0041, U0103, U0102 ] }; // a, A, ă, Ă
+    key <AC02> { [ U0073, U0053, U0219, U0218 ] }; // s, S, ș, Ș
+    key <AC03> { [ U0068, U0048, U002f, U00f7 ] }; // h, H, /, ÷
+    key <AC04> { [ U0074, U0054, U021b, U021a ] }; // t, T, ț, Ț
+    key <AC05> { [ U0067, U0047, U003d, U2260 ] }; // g, G, =, ≠
+    key <AC06> { [ U0079, U0059, U00ee, U00ce ] }; // y, Y, î, Î
+    key <AC07> { [ U006e, U004e, U002d        ] }; // n, N, -, <none>
+    key <AC08> { [ U0065, U0045, U005f        ] }; // e, E, _, <none>
+    key <AC09> { [ U006f, U004f, U00e2, U00c2 ] }; // o, O, â, Â
+    key <AC10> { [ U0069, U0049, U007c, U00bd ] }; // i, I, |, ½
+
+    key <AC11> { [ Delete ] };
+
+
+    key <AB01> { [ U007a, U005a, U007e        ] }; // z, Z, ~, <none>
+    key <AB02> { [ U0078, U0058               ] }; // x, X, <none>, <none>
+    key <AB03> { [ U006d, U004d, U007b, U2714 ] }; // m, M, {, ✔
+    key <AB04> { [ U0063, U0043, U007d, U2718 ] }; // c, C, }, ✘
+    key <AB05> { [ U0076, U0056, U0023        ] }; // v, V, #, <none>
+    key <AB06> { [ U006b, U004b, U0060        ] }; // k, K, `, <none>
+    key <AB07> { [ U006c, U004c, U0026, U221e ] }; // l, L, &, ∞
+    key <AB08> { [ U002c, U003b, U002a, U00d7 ] }; // ,, ;, *, ×
+    key <AB09> { [ U002e, U003a, U003c, U2245 ] }; // ., :, <, ≅
+    key <AB10> { [ U003f, U0021, U003e, U226b ] }; // ?, !, >, ≫
+
+
+    key <KPDL> { [ KP_Delete, KP_Decimal ] }; // Dele .
+
+    key <LSGT> { [ U1f975, U26a7, U1f913, U2626 ] }; // 🥵, ⚧, 🤓, ☦️
+    key <BKSP> { [ U1f618, U1f619, U1f62d, U1f927 ] }; // 😘, 😙, 😭, 🤧
+
+    key <CAPS> { [ BackSpace ] };
+
+
+    key <LALT> {
+        type[Group1]="ONE_LEVEL",
+        symbols[Group1] = [ ISO_Level3_Shift ]
+    };
+    key <RWIN> { [ Alt_L ] };
+    modifier_map Mod1 { <RWIN> }; // Wierdly adds this only to the first modifier
+    key <COMP> { [ Escape ] };
+
+    key <SCLK> { [ U1f644, U231a, U1f612, U1f92c ] }; // 🙄, ⌚, 😒, 🤬
+    key <DELE> { [ U1f52b, U1f4a6, U1f30a, U1f346 ] }; // 🔫, 💦, 🌊, 🍆
+
+
+    include "level3(ralt_switch)"
+};
